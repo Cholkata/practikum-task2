@@ -1,5 +1,5 @@
 - Опитах се всякак за първа задача, но уви не ми се получиха вариантите
-  /*zad 3
+  /*зад 2
     int check = 0; char letter;
     cin >> letter;
     if (letter >= 'A' && letter <= 'Z')
