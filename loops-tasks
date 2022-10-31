@@ -1,0 +1,196 @@
+/* zad 0
+    int number, check = 1;
+    cin >> number;
+    for (int i = 1; i <= number; i++)
+    {
+        check = check * i;
+    }
+    cout << check << endl;
+    return 0;*/
+
+    /* zad 1
+    unsigned int number, result;
+    cin >> number;
+    for (int i = 1; i <= number; i++)
+    {
+        result = i * i + 3 * i;
+        cout << result << endl;
+
+    }*/
+
+
+    /* zad 3
+    int number, fibNumber1 = 0, fibNumber2 = 1, i, fibNext;
+    cin >> number;
+    for (i = 0; i < number - 1; i++)
+    {
+        fibNext = fibNumber1 + fibNumber2;
+        fibNumber1 = fibNumber2;
+        fibNumber2 = fibNext;
+    }
+    cout << fibNumber2 << endl;*/
+
+
+    /*zad 4
+    int number, sum=0;
+    do
+    {
+        cin >> number;
+        sum = sum + number;
+    }
+    while (number != 0);
+    cout << sum << endl;*/
+
+    
+    /* zad 5
+    int number, sum = 0;
+    cin >> number;
+    do
+    {
+        sum = sum + (number % 10);
+        number = number / 10;
+    } 
+    while (number > 0);
+    cout << sum << endl;*/
+
+    /* zad 6
+    int num, power, result = 1, i;
+    cin >> num >> power;
+    for (i = 1; i <= power; i++)
+    {
+        result = result * num;
+    }
+    cout << result << endl;*/
+
+
+    /* zad 7
+    int number, flag = 0;
+    cin >> number;
+    for (int i = 2; i <= number / 2; i++)
+    {
+        if (number % i == 0)
+        {
+            cout << "NO" << endl;
+            flag = 1;
+            break;
+        }
+    }
+    if (flag == 0)
+        cout << "YES" << endl;
+    return 0;*/
+
+    /* zad 8
+    for (char letter = 66; letter <= 90; letter++)
+    {
+        if (letter == 69)
+        {
+            continue;
+        }
+        if (letter == 73)
+        {
+            continue;
+        }
+        if (letter == 79)
+        {
+            continue;
+        }
+        if (letter == 85)
+        {      
+            continue;
+        }
+        cout << letter << endl;
+    }
+    return 0;*/
+
+    /* zad 8 - v2
+    for (char letter = 66; letter <= 90; letter++)
+    {
+    if (!(letter == 69 || letter == 73 || letter == 79 || letter == 85))
+    
+    cout << letter << endl;
+    }
+    return 0;*/
+
+
+
+    /* zad 9
+    int binaryNum[10], num, i;
+    cin >> num;
+    for (i = 0; num > 0; i++)
+    {
+        binaryNum[i] = num % 2;
+        num = num / 2;
+    }
+    for (i = i - 1; i >= 0; i--)
+    {
+        cout << binaryNum[i];
+    }*/
+
+    
+    /* zad 10 - ??
+    int number;
+    cin >> number;
+    cout << "0";
+    for (int i = 0; i < number - 1; i++)
+    {
+        cout << "+";
+    }
+    cout << endl;
+    cout << "-";
+    for (int r = 0; r < number - 3; r++)
+    {
+        cout << "0";
+        for (int c = 0; c < number - 2; c++)
+        {
+            cout << "+";
+        }
+    }
+    cout << endl;
+    cout << "-";
+    for (int i = 0; i < number - 3; i++)
+    {
+        cout << "-";
+        cout << "0";
+    }
+    cout << "+" << endl;
+    cout << "-";
+    cout << "-";
+    for (int i = 0; i < number - 3; i++)
+    {
+        cout << "-";
+        cout << "0";
+    }
+    cout << endl;*/
+
+    /* zad 13
+    int number, reversedNumber = 0, check, digit;
+    cin >> number;
+    check = number;
+    do
+    {
+        digit = number % 10;
+        reversedNumber = (reversedNumber * 10) + digit;
+        number = number / 10;
+    } while (number != 0);
+    if (check == reversedNumber)
+        cout << "True" << endl;
+    else
+        cout << "False" << endl;
+    return 0;*/
+
+
+    /* zad 15
+    int number, sum = 0, i = 1;
+    cin >> number;
+    while (i < number)
+    {
+        if (number % i == 0)
+            sum = sum + i;
+            i++;
+    }
+    if (sum == number)
+        cout << "True" << endl;
+    else
+        cout << "False" << endl;
+    return 0;*/
+}
